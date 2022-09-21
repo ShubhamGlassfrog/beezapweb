@@ -1,0 +1,522 @@
+body {
+    background-color: #F7F5FA !important;
+}
+
+.nunito {
+    font-family: 'Nunito Sans';
+
+}
+
+.worksans {
+    font-family: 'Work Sans';
+
+}
+
+.main {
+    margin-right: -80px;
+    margin-left: -80px;
+
+
+}
+.padding{
+    padding-left: 0.4rem;
+    padding-top: 0.4rem;
+}
+
+.nav-link {
+    font-family: 'Nunito Sans' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    line-height: 30px !important;
+}
+
+.searchbar {
+    border: none !important;
+    background-color: #F7F5FA !important;
+}
+
+.fdsearchbar {
+    border: none !important;
+    background-color: #DCEEEE !important;
+}
+
+.search {
+    color: #2E4751 !important;
+
+}
+
+.activelink>.nav-link {
+    color: #168F8E !important;
+}
+
+.nav-item>.nav-link:hover {
+    color: #168F8E !important
+}
+
+.signinbutton {
+    /* padding: 0.7rem;
+
+    background: #168F8E;
+    border: 1.5px solid #168F8E;
+    border-radius: 6px;
+    text-align: center;
+    color: white !important; */
+    
+
+
+background: #168F8E;
+border: 1.5px solid #168F8E;
+border-radius: 6px;
+color: white !important;
+}
+.signinbutton > a{
+    color: #ffffff !important;
+}
+.signinbutton:hover{
+    opacity: 0.75;
+
+}
+
+.sgicon {
+    height: 1.5rem;
+}
+
+.banner {
+    height: 33rem;
+}
+
+.pattern {
+    height: 3rem;
+    margin-top: 4rem;
+
+}
+
+.mainheading {
+    margin-left: 3.5rem;
+
+}
+
+.heading {
+    margin-top: 3rem;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.1rem;
+
+    color: #23221D;
+
+}
+
+.secheading {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.1rem;
+
+    color: #23221D;
+}
+
+.cons {
+    color: #F5AE93;
+}
+
+.fddoc {
+    background-color: #DCEEEE;
+}
+
+.para {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+
+
+    color: #2E4751;
+}
+
+.card {
+    background-color: #F7F5FA !important;
+    border: 1px solid #E2E3E8 !important;
+}
+
+.card:hover {
+    background-color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+}
+
+.icon1 {
+    height: 84px;
+    width: 84px;
+    background: #FFD6E0;
+    border-radius: 16px;
+    margin: 1.3rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+
+}
+
+.icon2 {
+    height: 84px;
+    width: 84px;
+    background: #D5DBF8;
+    border-radius: 16px;
+    margin: 1.3rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+
+}
+
+.icon3 {
+    height: 84px;
+    width: 84px;
+    background: #F7D2C4;
+    border-radius: 16px;
+    margin: 1.3rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+
+}
+
+.icon {
+    height: 2rem;
+}
+
+.bannershadow {
+    box-shadow: 28px 28px 0px #d5dbf8;
+}
+
+.docpattern {
+
+    margin-bottom: 37rem;
+    margin-left: -1rem;
+}
+
+.doclist {
+    position: absolute;
+    width: 16rem;
+    height: 20rem;
+    left: 22rem;
+    top: 25rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 5%);
+    border-radius: 24px;
+}
+
+.patterndlist {
+    height: 3rem;
+    margin-left: 7rem;
+}
+
+.selectdoc {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+}
+
+.finddoc {
+    font-size: 2rem;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.testimonial {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.7rem;
+
+    text-align: center;
+
+    color: #23221D;
+}
+
+.platforms {
+    background: #DCEEEE;
+    border-radius: 56px 56px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.para {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #626262;
+}
+
+.playstore {
+    /* width: 8rem;
+    height: 3.2rem; */
+    background: #23221D;
+    border: 1.5px solid #23221D;
+    border-radius: 6px;
+    color: white !important;
+}
+
+.beeicon {
+    height: 1.3rem;
+}
+
+.whatsapp {
+    /* width: 8rem;
+    height: 3.2rem; */
+    background: #168F8E;
+    border: 1.5px solid #168F8E;
+    border-radius: 6px;
+    color: white !important;
+}
+
+.website {
+    /* width: 8rem;
+    height: 3.2rem; */
+    background: #F5AE93;
+    border: 1.5px solid #F5AE93;
+    border-radius: 6px;
+    color: white !important;
+}
+
+.platlink {
+    color: #ffffff;
+}
+
+.platformbottom {
+    background-color: #8A99E5;
+}
+
+.readmore {
+    height: 0.8rem;
+}
+
+.explore {
+    color: #168F8E;
+}
+
+.image {
+    height: 12.65rem;
+    width: -webkit-fill-available;
+
+}
+
+footer {
+    padding: 60px 0;
+}
+
+footer .footer-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#footer {
+    background: #ECECEC !important;
+}
+
+#footer h5 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #168F8E;
+}
+
+#footer a {
+    color: #626262;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li {
+    padding: 3px 0;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li a {
+    color: #626262;
+}
+
+#footer ul.social li a:hover {
+    color: #eeeeee;
+}
+
+#footer ul.quick-links li {
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+    padding: 3px 0;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+#footer ul.quick-links li a i {
+    margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px) {
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+
+.collapsible-link::before {
+    content: '';
+    width: 14px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1rem;
+    display: block;
+    transition: all 0.3s;
+}
+
+/* Vertical line */
+.collapsible-link::after {
+    content: '';
+    width: 2px;
+    height: 14px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: calc(1rem + 6px);
+    display: block;
+    transition: all 0.3s;
+}
+
+.collapsible-link[aria-expanded='true']::after {
+    transform: rotate(90deg) translateX(-1px);
+}
+
+.collapsible-link[aria-expanded='true']::before {
+    transform: rotate(180deg);
+}
+
+.bannerupper {
+    width: 700px;
+    height: 197px;
+    left: 20rem;
+    top: 14rem;
+    background: #ffffff;
+    position: absolute;
+}
+
+.fdbannerupper {
+   
+    top: -3rem;
+    background: #ffffff;
+    position: relative;
+    padding: 2rem;
+}
+
+.inputlabel {
+    background-color: #F7F5FA;
+    position: absolute;
+    margin-top: -0.8rem;
+    margin-left: 1rem;
+    padding: 0rem 0.4rem 0rem 0.4rem;
+}
+
+.inputbox {
+    background-color: #F7F5FA !important;
+    padding: 0.9rem 0.75rem !important;
+}
+
+.inputbox:focus {
+    border: 1px solid #168F8E !important;
+    box-shadow: none !important;
+
+
+}
+
+.formgroup {
+    margin-bottom: 2rem;
+}
+
+.maplist {
+    width: -webkit-fill-available;
+    height: 20rem;
+    margin-top: 0.6rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 5%);
+    border-radius: 24px;
+}
+
+.suggestions {
+    height: 2rem;
+    width: 7rem;
+    background-color: #ECECEC;
+    border-radius: 4px;
+    margin-right: 1rem;
+
+}
+
+.suggestionbutton {
+    height: 2rem;
+    width: 7rem;
+    background: #DCEEEE;
+    border: 1px solid #168F8E;
+    border-radius: 4px;
+}
+
+.cancelicon {
+    height: 0.7rem;
+}
+
+.appcard {
+    background-color: #ffffff !important;
+}
+
+.morebutton {
+    height: 2rem;
+    width: 7rem;
+    background: #DCEEEE;
+    border-radius: 8px;
+    color: #168F8E;
+    font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+
+}
+.appcardbody{
+    padding: 1.25rem 1.25rem 0rem 1.25rem !important;
+}
+.appcardbody2{
+    padding: 0rem 1.25rem 0rem 1.8rem !important;
+
+}
