@@ -1,14 +1,38 @@
+:root{
+
+    --font-work-sans: 'Work Sans', sans-serif;
+    --font-nunito-sans: 'Nunito Sans', sans-serif;;
+    --font-playfair-display: 'Playfair Display', serif;;
+
+    --font-primary: var(--font-work-sans);
+    --font-secondary: var(--font-playfair-display);
+    --font-third: var(--font-nunito-sans);
+
+    
+}
+
+
 body {
     background-color: #F7F5FA !important;
 }
+a:link {
+    color: #ffffff;
+  }
+  a:hover {
+    color: #ffffff;
+  }
 
-.nunito {
-    font-family: 'Nunito Sans';
+.playfair {
+    font-family: var(--font-secondary);
 
+}
+.nunito{
+    font-family:var(--font-third) ;
 }
 
 .worksans {
-    font-family: 'Work Sans';
+    font-family: var(--font-primary);
+
 
 }
 
@@ -64,7 +88,7 @@ body {
     color: white !important; */
     
 
-
+width: fit-content;
 background: #168F8E;
 border: 1.5px solid #168F8E;
 border-radius: 6px;
@@ -75,6 +99,14 @@ color: white !important;
 }
 .signinbutton:hover{
     opacity: 0.75;
+    color: #ffffff !important;
+
+
+}
+.signinbutton > .nav-link:hover{
+    opacity: 0.75;
+    color: #ffffff !important;
+
 
 }
 
@@ -83,8 +115,10 @@ color: white !important;
 }
 
 .banner {
-    height: 33rem;
-}
+    width: -webkit-fill-available;}
+    .banner2{
+        height: 25rem;
+    }
 
 .pattern {
     height: 3rem;
@@ -99,8 +133,6 @@ color: white !important;
 
 .heading {
     margin-top: 3rem;
-    font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 600;
     font-size: 2.1rem;
 
@@ -109,8 +141,7 @@ color: white !important;
 }
 
 .secheading {
-    font-family: 'Work Sans';
-    font-style: normal;
+    
     font-weight: 500;
     font-size: 2.1rem;
 
@@ -119,6 +150,7 @@ color: white !important;
 
 .cons {
     color: #F5AE93;
+    
 }
 
 .fddoc {
@@ -126,8 +158,6 @@ color: white !important;
 }
 
 .para {
-    font-family: 'Nunito Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 0.8rem;
 
@@ -136,6 +166,7 @@ color: white !important;
 }
 
 .card {
+
     background-color: #F7F5FA !important;
     border: 1px solid #E2E3E8 !important;
 }
@@ -200,7 +231,6 @@ color: white !important;
 .doclist {
     position: absolute;
     width: 16rem;
-    height: 20rem;
     left: 22rem;
     top: 25rem;
     background: #FFFFFF;
@@ -223,15 +253,13 @@ color: white !important;
 
 .finddoc {
     font-size: 2rem;
-    font-family: 'Work Sans';
-    font-style: normal;
+   
     font-weight: 500;
 
 }
 
 .testimonial {
-    font-family: 'Work Sans';
-    font-style: normal;
+   
     font-weight: 500;
     font-size: 2.7rem;
 
@@ -260,6 +288,8 @@ color: white !important;
     border: 1.5px solid #23221D;
     border-radius: 6px;
     color: white !important;
+    padding: 0.5rem;
+
 }
 
 .beeicon {
@@ -273,6 +303,8 @@ color: white !important;
     border: 1.5px solid #168F8E;
     border-radius: 6px;
     color: white !important;
+    padding: 0.5rem;
+
 }
 
 .website {
@@ -282,6 +314,8 @@ color: white !important;
     border: 1.5px solid #F5AE93;
     border-radius: 6px;
     color: white !important;
+    padding: 0.5rem;
+
 }
 
 .platlink {
@@ -427,12 +461,10 @@ footer .footer-title {
 }
 
 .bannerupper {
-    width: 700px;
-    height: 197px;
-    left: 20rem;
-    top: 14rem;
+    top: 12rem;
     background: #ffffff;
     position: absolute;
+    padding: 1rem;
 }
 
 .fdbannerupper {
@@ -477,11 +509,12 @@ footer .footer-title {
 }
 
 .suggestions {
-    height: 2rem;
-    width: 7rem;
+    
     background-color: #ECECEC;
     border-radius: 4px;
     margin-right: 1rem;
+    padding: 0.23rem;
+
 
 }
 
@@ -519,4 +552,18 @@ font-size: 20px;
 .appcardbody2{
     padding: 0rem 1.25rem 0rem 1.8rem !important;
 
+}
+.list-link{
+    font-family: 'Nunito Sans' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    line-height: 20px !important;
+}
+.listcardbody{
+    padding: 0.25rem 1.25rem 0rem 1.25rem !important;
+}
+.moredoc{
+    background: #DCEEEE;
+border-radius: 8px;
 }
