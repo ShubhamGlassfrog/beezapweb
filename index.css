@@ -555,7 +555,7 @@ font-weight: 600;
 
 }
 .appcardbody{
-    padding: 1.25rem 1.25rem 0rem 1.25rem !important;
+    padding: 1.25rem 0 0rem 0rem !important;
 }
 .appcardbody2{
     padding: 0rem 1.25rem 0rem 1.8rem !important;
