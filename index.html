@@ -17,155 +17,161 @@
 </head>
 
 <body class="page home">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-8">
-        <nav class="navbar navbar-expand-lg navbar-light nav-border ">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><img src="assets/Logo.svg" style="height: 2rem;" /></a>
+  <nav class="navbar navbar-expand-lg navbar-light nav-border navpad ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html"><img src="assets/Logo.svg" style="height: 2rem;" /></a>
 
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <form class="form-inline mr-auto mt-2 mt-lg-0">
-              <div class="mt-3 inputs">
-                <ul class="navbar-nav my-2 my-lg-0">
-                  <li class="nav-item pr-3">
-                    <a class="nav-link" href="finddoc.html">Find Doctor </a>
-                  </li>
-                </ul>
-                <!-- <i class="fa fa-search fa-xs" style="color: #495057;"></i> -->
-                <!-- <a href="finddoc.html"><input type="text" class="form-control searchbar " placeholder="Find Doctors"></a> -->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <form class="form-inline mr-auto mt-2 mt-lg-0">
+        <div class="mt-3 inputs">
+          <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item pr-3">
+              <a class="nav-link" href="finddoc.html">Find Doctor </a>
+            </li>
+          </ul>
+          <!-- <i class="fa fa-search fa-xs" style="color: #495057;"></i> -->
+          <!-- <a href="finddoc.html"><input type="text" class="form-control searchbar " placeholder="Find Doctors"></a> -->
 
 
+        </div>
+      </form>
+      <ul class="navbar-nav my-2 my-lg-0">
+        <li class="nav-item activelink pr-3">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item pr-3">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item pr-3">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+
+        <li class="nav-item nav-item d-flex pr-3">
+          <div class="dropdown show">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Doctor Login
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="https://beezap.in/doctor" target="_blank">Doctor Login</a>
+              <a class="dropdown-item" href="#" target="_blank">Register</a>
+
+            </div>
+          </div>
+        </li>
+        <li class="nav-item pr-3 signinbutton">
+          <a class=" d-flex" href="https://beezap.in/users" tabindex="-1" aria-disabled="true"
+            style="width: fit-content;">Sign in
+            <img class="sgicon padding" src="assets/SignInLogo.svg" /></a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <main>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img class="pattern" src="assets/Pattern.png" alt="pattern" />
+
+            <div class="mainheading">
+              <h2 class="heading playfair">Need healthcare consultant? Just <span class="cons">beezap</span></h2>
+              <p class="para nunito">beezap - I care for you and your time." Like education, healthcare also needs to be
+                given importance because you never know when an emergency can arise.</p>
+              <a href="https://beezap.in/users"><button type="button" class="btn btn-outline-info">Get
+                  Appointment</button></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img class="banner" src="assets/Banner.png" alt="banner" />
+          </div>
+        </div>
+    </section>
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h5 class="cons text-center nunito" style="font-weight: 700;">Scheduling with doctor</h5>
+            <h3 class="secheading text-center playfair">Features that get you an <br> Appointment</h3>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="card-deck">
+          <div class="col-lg-4 col-md-6 pt-3">
+            <div class="card" style="padding: 1rem;border-radius: 1rem;">
+              <div class="icon1">
+                <img class="icon" src="assets/Vector.svg" />
               </div>
-            </form>
-            <ul class="navbar-nav my-2 my-lg-0">
-              <li class="nav-item activelink pr-3">
-                <a class="nav-link" href="index.html">Home </a>
-              </li>
-              <li class="nav-item pr-3">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item pr-3">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            
-
-              <li class="nav-item nav-item d-flex pr-3">
-                <div class="dropdown show">
-                <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Doctor Login
+              <div class="card-body">
+                <h5 class="card-title nunito" style="font-weight: 600;">Find Your Specialist</h5>
+                <p class="card-text nunito" style="font-weight: 400;">Before consulting, look out for the specialists
+                </p>
+                <a class="card-text explore nunito" style="font-weight: 600;" href="https://beezap.in/users"><span
+                    style="color: #168F8E;">Explore more <img class="readmore" src="assets/Arrow.png" /></span>
                 </a>
-              
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="https://beezap.in/doctor" target="_blank">Doctor Login</a>
-                  <a class="dropdown-item" href="#" target="_blank">Register</a>
-                </div>
               </div>
-              </li>
-              <li class="nav-item pr-3 signinbutton">
-                <a class="nav-link d-flex" href="https://beezap.in/users" tabindex="-1" aria-disabled="true" style="width: fit-content;">Sign in
-                  <img class="sgicon padding" src="assets/SignInLogo.svg" /></a>
-              </li>
-            </ul>
-
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <img class="pattern" src="assets/Pattern.png" alt="pattern" />
-
-          <div class="mainheading">
-            <h2 class="heading playfair">Need healthcare consultant? Just <span class="cons">beezap</span></h2>
-            <p class="para nunito">beezap - I care for you and your time." Like education, healthcare also needs to be
-              given importance because you never know when an emergency can arise.</p>
-            <a href="https://beezap.in/users"><button type="button" class="btn btn-outline-info">Get
-                Appointment</button></a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <img class="banner" src="assets/Banner.png" alt="banner" />
-        </div>
-      </div>
-  </section>
-  <section class="pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-8">
-          <h5 class="cons text-center nunito" style="font-weight: 700;">Scheduling with doctor</h5>
-          <h3 class="secheading text-center playfair">Features that get you an <br> Appointment</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="card-deck">
-          <div class="card" style="padding: 1rem;">
-            <div class="icon1">
-              <img class="icon" src="assets/Vector.svg" />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title nunito" style="font-weight: 600;">Find Your Specialist</h5>
-              <p class="card-text nunito" style="font-weight: 400;">Before consulting, look out for the specialists</p>
-              <p class="card-text explore nunito" style="font-weight: 600;"><span>Explore more <img class="readmore"
-                    src="assets/Arrow.png" /></span>
-              </p>
             </div>
           </div>
-          <div class="card" style="padding: 1rem;">
-            <div class="icon2">
-              <img class="icon" src="assets/Group.svg" />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title nunito" style="font-weight: 600;">Schedule Appointments</h5>
-              <p class="card-text nunito" style="font-weight: 400;">Choose the time and date slot as per the
-                availability of doctors.</p>
-              <p class="card-text explore nunito" style="font-weight: 600;"><span>Explore more <img class="readmore"
-                    src="assets/Arrow.png" /></span>
-              </p>
+          <div class="col-lg-4 col-md-6 pt-3">
+            <div class="card" style="padding: 1rem;border-radius: 1rem;">
+              <div class="icon2">
+                <img class="icon" src="assets/Group.svg" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title nunito" style="font-weight: 600;">Schedule Appointments</h5>
+                <p class="card-text nunito" style="font-weight: 400;">Choose the time and date slot as per the
+                  availability of doctors.</p>
+                <a class="card-text explore nunito" style="font-weight: 600;" href="https://beezap.in/users"><span
+                    style="color: #168F8E;">Explore more <img class="readmore" src="assets/Arrow.png" /></span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="card" style="padding: 1rem;">
-            <div class="icon3">
-              <img class="icon" src="assets/star.svg" />
+          <div class="col-lg-4 col-md-6 pt-3">
+            <div class="card" style="padding: 1rem;border-radius: 1rem;">
+              <div class="icon3">
+                <img class="icon" src="assets/star.svg" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title nunito" style="font-weight: 600;">Get Your Appointment</h5>
+                <p class="card-text nunito" style="font-weight: 400;">Just a tap and get your appointment fixed.</p>
+                <a class="card-text explore nunito" style="font-weight: 600; " href="https://beezap.in/users"><span
+                    style="color: #168F8E;">Explore more <img class="readmore" src="assets/Arrow.png" /></span>
+                </a>
+              </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title nunito" style="font-weight: 600;">Get Your Appointment</h5>
-              <p class="card-text nunito" style="font-weight: 400;">Just a tap and get your appointment fixed.</p>
-              <p class="card-text explore nunito" style="font-weight: 600;"><span>Explore more <img class="readmore"
-                    src="assets/Arrow.png" /></span>
-              </p>
-            </div>
+          </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="pt-5 pb-5">
-    <div class="container">
-      <div class="row" style="display: contents;">
-        <!-- <div class="col-lg-12 "> -->
+    </section>
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row" style="display: contents;">
+          <!-- <div class="col-lg-12 "> -->
           <div class="row">
             <div class="col-lg-8 d-flex">
               <div class="row">
-              <div class="col-lg-4">
-               <img class="banner2 bannershadow" src="assets/doctor.png" alt="banner" />
-               </div>
-               <div class="col-lg-4">
-               <img class="banner2" src="assets/DoctorCard.png" alt="banner" />
+                <div class="col-lg-4">
+                  <img class="banner2 bannershadow" src="assets/doctor.png" alt="banner" />
+                  <img class="pattern " src="assets/Pattern.png" alt="pattern" />
+
+                </div>
+                <div class="col-lg-4 docbanner">
+                  <img class="banner3" src="assets/DoctorCard.png" alt="banner" />
 
 
-               </div>
-              <!-- <img class="pattern docpattern" src="assets/Pattern.png" alt="pattern" /> -->
+                </div>
 
 
-             </div>
+              </div>
 
             </div>
             <div class="col-lg-4" style="margin-top: 5rem;">
@@ -177,218 +183,245 @@
                   Appointment</button></a>
 
             </div>
-          
+
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 ">
-          <h4 class="testimonial pb-5 playfair">Our Testimonials</h4>
+    </section>
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 ">
+            <h4 class="testimonial pb-5 playfair">Our Testimonials</h4>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="card-deck">
-          <div class="card" style="padding: 1rem;background-color: #ffffff !important;">
-            <div class="icon1">
-              <img class="icon" src="assets/QuoteIcon.png" />
-            </div>
-            <div class="card-body">
-              <p class="card-text nunito" style="font-weight: 400;">beezap is blowing away with the quality, commitment
-                and passion of their collective work</p>
-            </div>
-            <div class="row d-flex card-body">
-              <div class="col-lg-3">
-                <div><img src="assets/avatar.png" style="height: 4rem;    border-radius: 25%;
+        <div class="row">
+          <!-- <div class="card-deck"> -->
+            <div class="col-lg-4 col-md-6 pt-3">
+
+            <div class="card" style="padding: 1rem;background-color: #ffffff !important; border-radius: 1rem;">
+              <div class="icon1">
+                <img class="icon" src="assets/QuoteIcon.png" />
+              </div>
+              <div class="card-body testcard">
+                <p class="card-text nunito" style="font-weight: 400;">beezap is blowing away with the quality,
+                  commitment
+                  and passion of their collective work</p>
+              </div>
+              <div class="row d-flex card-body">
+                <div class="col-lg-3">
+                  <div><img src="assets/avatar.png" style="height: 4rem;    border-radius: 25%;
                                   " />
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <p class="nunito">Dr. Preeti Negi<br><span style="font-size: 0.7rem;">Dentist</span></p>
                 </div>
               </div>
-              <div class="col-lg-9">
-                <p class="nunito">Dr. Preeti Negi<br><span style="font-size: 0.7rem;">Dentist</span></p>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-3">
+
+            <div class="card" style="padding: 1rem;background-color: #ffffff !important;border-radius: 1rem;">
+              <div class="icon2">
+                <img class="icon" src="assets/QuoteIcon.png" />
               </div>
-            </div>
-          </div>
-          <div class="card" style="padding: 1rem;background-color: #ffffff !important;">
-            <div class="icon2">
-              <img class="icon" src="assets/QuoteIcon.png" />
-            </div>
-            <div class="card-body">
-              <p class="card-text nunito" style="font-weight: 400;">beezap healthcare knows exactly what they are doing
-                when it comes to promoting the medical health services and the awareness among the people.</p>
-            </div>
-            <div class="row d-flex card-body">
-              <div class="col-lg-3">
-                <div><img src="assets/avatar.png" style="height: 4rem;    border-radius: 25%;
+              <div class="card-body testcard">
+                <p class="card-text nunito" style="font-weight: 400;">beezap healthcare knows exactly what they are
+                  doing
+                  when it comes to promoting the medical health services and the awareness among the people.</p>
+              </div>
+              <div class="row d-flex card-body">
+                <div class="col-lg-3">
+                  <div><img src="assets/avatar.png" style="height: 4rem;    border-radius: 25%;
                                                     " />
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <p class="nunito">Priyanshu Prajapati<br><span style="font-size: 0.7rem;">User</span></p>
                 </div>
               </div>
-              <div class="col-lg-9">
-                <p class="nunito">Priyanshu Prajapati<br><span style="font-size: 0.7rem;">User</span></p>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-3">
+
+            <div class="card" style="padding: 1rem;background-color: #ffffff !important;border-radius: 1rem;">
+              <div class="icon3">
+                <img class="icon" src="assets/QuoteIcon.png" />
               </div>
-            </div>
-          </div>
-          <div class="card" style="padding: 1rem;background-color: #ffffff !important;">
-            <div class="icon3">
-              <img class="icon" src="assets/QuoteIcon.png" />
-            </div>
-            <div class="card-body">
-              <p class="card-text nunito" style="font-weight: 400;">Providing better health care services at lower costs
-                than any other application.</p>
-            </div>
-            <div class="row d-flex card-body">
-              <div class="col-lg-3">
-                <div><img src="assets/avatar.png" style="height: 4rem;    border-radius: 25%;
+              <div class="card-body testcard">
+                <p class="card-text nunito" style="font-weight: 400;">Providing better health care services at lower
+                  costs
+                  than any other application.</p>
+              </div>
+              <div class="row d-flex card-body">
+                <div class="col-lg-3">
+                  <div><img src="assets/avatar.png" style="height: 4rem;    border-radius: 25%;
                                                                       " />
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <p class="nunito">Ankush Gaur<br><span style="font-size: 0.7rem;">User</span></p>
                 </div>
               </div>
-              <div class="col-lg-9">
-                <p class="nunito">Ankush Gaur<br><span style="font-size: 0.7rem;">User</span></p>
+            </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 ">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="platforms"><img src="assets/beezapmob.png" style="height: 30rem;padding-top: 5rem;" /></div>
+              </div>
+              <div class="col-lg-6 p-5">
+                <h3 class="playfair" style="font-weight: 500;">Platforms</h3>
+                <p class="nunito para">You can download it from Google store or you can visit beezap.in
+                  Or you can simply get the consultation via Whatsapp.</p>
+                <div class="d-flex">
+                  <div class="playstore" style="margin-right: 1rem;">
+                    <img src="assets/playstore.png" class="beeicon" /> <a class="platlink"
+                      href="https://play.google.com/store/apps/details?id=myapp.beezap" tabindex="-1"
+                      aria-disabled="true" style="font-size: 0.7rem;" target="_blank">Play Store</a>
+                  </div>
+                  <div class="whatsapp" style="margin-right: 1rem;"><img src="assets/whatsapp.png" class="beeicon" /> <a
+                      class="platlink" href="https://wa.me/918755212323" tabindex="-1" aria-disabled="true"
+                      style="font-size: 0.7rem;" target="_blank">What's App</a>
+                  </div>
+                  <div class="website" style="margin-right: 1rem;"><img src="assets/website.png" class="beeicon" /> <a
+                      class="platlink " href="https://beezap.in/" tabindex="-1" aria-disabled="true"
+                      style="font-size: 0.7rem;" target="_blank">Website</a>
+                  </div>
+
+
+                </div>
+                <div class="pt-4">
+                  <div class="d-flex ">
+                    <img src="assets/Tick Mark.png" class="beeicon" />
+                    <p class="pl-4">Check the doctor's availability date and time.</p>
+                  </div>
+                  <div class="d-flex "> <img src="assets/Tick Mark.png" class="beeicon" />
+                    <p class="pl-4">Utilize your time and money. </p>
+                  </div>
+                  <div class="d-flex "> <img src="assets/Tick Mark.png" class="beeicon" />
+                    <p class="pl-4">Get healthier with beezap. </p>
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-5 pb-5 platformbottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 ">
+            <div class="row">
+              <div class="col-lg-7 pt-5">
+                <h6 style="color: #F5AE93;">For Doctors</h6>
+                <h3 class="playfair text-white" style="font-weight: 500;">Access, manage, and service! Now becomes
+                  easy..
+                </h3>
+                <div class="pt-4">
+                  <div class="d-flex ">
+                    <img src="assets/Tick Mark.png" class="beeicon" />
+                    <p class="pl-4 text-white">Can provide consultation to more patients. </p>
+                  </div>
+                  <div class="d-flex "> <img src="assets/Tick Mark.png" class="beeicon" />
+                    <p class="pl-4 text-white">With beezap, managing the data of the patients becomes easy.</p>
+                  </div>
+                  <div class="d-flex "> <img src="assets/Tick Mark.png" class="beeicon" />
+                    <p class="pl-4 text-white">"Need your free time?" unavailability period on your finger tips.</p>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-lg-5 d-flex justify-content-center">
+                <img src="assets/beezapmob.png" style="height: 30rem;" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 ">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="platforms"><img src="assets/beezapmob.png" style="height: 30rem;padding-top: 5rem;" /></div>
-            </div>
-            <div class="col-lg-6 p-5">
-              <h3 class="playfair" style="font-weight: 500;">Platforms</h3>
-              <p class="nunito para">You can download it from Google store or you can visit beezap.in
-                Or you can simply get the consultation via Whatsapp.</p>
-              <div class="d-flex justify-content-between">
-                <div class="playstore">
-                  <img src="assets/playstore.png" class="beeicon" /> <a class="platlink"
-                    href="https://play.google.com/store/apps/details?id=myapp.beezap" tabindex="-1" aria-disabled="true"
-                    style="font-size: 0.7rem;" target="_blank">Play Store</a>
-                </div>
-                <div class="whatsapp"><img src="assets/whatsapp.png" class="beeicon" /> <a class="platlink"
-                    href="#" tabindex="-1" aria-disabled="true" style="font-size: 0.7rem;">What's App</a>
-                </div>
-                <div class="website"><img src="assets/website.png" class="beeicon" /> <a class="platlink "
-                    href="https://beezap.in/" tabindex="-1" aria-disabled="true" style="font-size: 0.7rem;"
-                    target="_blank">Website</a>
-                </div>
+    </section>
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-8">
+            <h5 class="cons text-center">Health articles</h5>
+            <h3 class="secheading text-center playfair">Get health tips from<br> experts</h3>
+          </div>
+        </div>
+        <div class="row">
+          <!-- <div class="card-deck"> -->
+            <div class="col-lg-4 col-md-6 pt-3">
 
-
+            <div class="card" style="border: none !important;">
+              <div class="d-flex justify-content-center">
+                <img class="image " src="assets/image.png" />
               </div>
-              <div class="pt-4">
-                <div class="d-flex ">
-                  <img src="assets/Tick Mark.png" class="beeicon" />
-                  <p class="pl-4">Check the doctor's availability date and time.</p>
-                </div>
-                <div class="d-flex "> <img src="assets/Tick Mark.png" class="beeicon" />
-                  <p class="pl-4">Utilize your time and money. </p>
-                </div>
-                <div class="d-flex "> <img src="assets/Tick Mark.png" class="beeicon" />
-                  <p class="pl-4">Get healthier with beezap. </p>
-                </div>
-
-
+              <div class="card-body">
+                <h5 class="card-title nunito" style="font-weight:600 ;">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing
+                  elit.</h5>
+                <p class="card-text nunito" style="font-weight: 400;">Lorem ipsum dolor sit amet, consecte adipiscing
+                  elit. Vestibe amet urna id
+                  suspendisse.</p>
+                <p class="card-text explore nunito" style="font-weight: 600;"><span class="explore">Read More <img
+                      class="readmore" src="assets/Arrow.png" /></span></p>
               </div>
             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-3">
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="pt-5 pb-5 platformbottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 ">
-          <div class="row">
-            <div class="col-lg-7 pt-5">
-              <h6 style="color: #F5AE93;">For Doctors</h6>
-              <h3 class="playfair text-white" style="font-weight: 500;">Access, manage, and service! Now becomes easy..
-              </h3>
-              <div class="pt-4">
-                <div class="d-flex ">
-                  <img src="assets/Tick Mark.png" class="beeicon" />
-                  <p class="pl-4 text-white">Can provide consultation to more patients. </p>
-                </div>
-                <div class="d-flex "> <img src="assets/Tick Mark.png" class="beeicon" />
-                  <p class="pl-4 text-white">With beezap, managing the data of the patients becomes easy.</p>
-                </div>
-                <div class="d-flex "> <img src="assets/Tick Mark.png" class="beeicon" />
-                  <p class="pl-4 text-white">"Need your free time?" unavailability period on your finger tips.</p>
-                </div>
-
-
+            <div class="card" style="border: none !important;">
+              <div class="d-flex justify-content-center">
+                <img class="image" src="assets/image2.png" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title nunito" style="font-weight:600 ;">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing
+                  elit.</h5>
+                <p class="card-text nunito" style="font-weight:400 ;">Lorem ipsum dolor sit amet, consecte adipiscing
+                  elit. Vestibe amet urna id
+                  suspendisse.</p>
+                <p class="card-text explore nunito" style="font-weight: 600;"><span class="explore">Read More <img
+                      class="readmore" src="assets/Arrow.png" /></span></p>
               </div>
             </div>
-            <div class="col-lg-5 d-flex justify-content-center">
-              <img src="assets/beezapmob.png" style="height: 30rem;" />
             </div>
-          </div>
+            <div class="col-lg-4 col-md-6 pt-3">
+
+            <div class="card" style="border: none !important;">
+              <div class="d-flex justify-content-center">
+                <img class="image" src="assets/image3.png" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title nunito" style="font-weight:600 ;">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing
+                  elit.</h5>
+                <p class="card-text nunito" style="font-weight:400 ;">Lorem ipsum dolor sit amet, consecte adipiscing
+                  elit. Vestibe amet urna id
+                  suspendisse.</p>
+                <p class="card-text explore nunito" style="font-weight: 600;"><span class=" explore">Read More <img
+                      class="readmore" src="assets/Arrow.png" /></span></p>
+              </div>
+            </div>
+            </div>
+          <!-- </div> -->
         </div>
       </div>
-    </div>
-  </section>
-  <section class="pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-8">
-          <h5 class="cons text-center">Health articles</h5>
-          <h3 class="secheading text-center playfair">Get health tips from<br> experts</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="card-deck">
-          <div class="card">
-            <div class="d-flex justify-content-center">
-              <img class="image " src="assets/image.png" />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title nunito" style="font-weight:600 ;">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit.</h5>
-              <p class="card-text nunito" style="font-weight: 400;">Lorem ipsum dolor sit amet, consecte adipiscing
-                elit. Vestibe amet urna id
-                suspendisse.</p>
-              <p class="card-text explore nunito" style="font-weight: 600;"><span class="explore">Read More <img
-                    class="readmore" src="assets/Arrow.png" /></span></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="d-flex justify-content-center">
-              <img class="image" src="assets/image2.png" />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title nunito" style="font-weight:600 ;">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit.</h5>
-              <p class="card-text nunito" style="font-weight:400 ;">Lorem ipsum dolor sit amet, consecte adipiscing
-                elit. Vestibe amet urna id
-                suspendisse.</p>
-              <p class="card-text explore nunito" style="font-weight: 600;"><span class="explore">Read More <img
-                    class="readmore" src="assets/Arrow.png" /></span></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="d-flex justify-content-center">
-              <img class="image" src="assets/image3.png" />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title nunito" style="font-weight:600 ;">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit.</h5>
-              <p class="card-text nunito" style="font-weight:400 ;">Lorem ipsum dolor sit amet, consecte adipiscing
-                elit. Vestibe amet urna id
-                suspendisse.</p>
-              <p class="card-text explore nunito" style="font-weight: 600;"><span class=" explore">Read More <img
-                    class="readmore" src="assets/Arrow.png" /></span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer id="footer">
     <div class="container">
@@ -429,7 +462,8 @@
         <div class="col-xs-12 col-sm-4 col-md-4">
           <h5>Company</h5>
           <ul class="list-unstyled quick-links">
-            <li><a href="http://zapmedics.com/policies/privacy.html" target="_blank"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+            <li><a href="http://zapmedics.com/policies/privacy.html" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
             <li><a href="http://zapmedics.com/policies/refund.html
               " target="_blank"><i class="fa fa-angle-double-right"></i>Refund Policy</a></li>
             <li><a href="https://blogs.beezap.in/" target="_blank"><i class="fa fa-angle-double-right"></i>Blog</a></li>

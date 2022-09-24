@@ -19,6 +19,7 @@ a:link {
     color: #ffffff;
   }
   a:hover {
+    text-decoration: none !important;
     color: #ffffff;
   }
 
@@ -59,6 +60,9 @@ a:link {
     border: none !important;
     background-color: #F7F5FA !important;
 }
+.navpad{
+    padding: 0 10px;
+}
 
 .fdsearchbar {
     border: none !important;
@@ -79,13 +83,7 @@ a:link {
 }
 
 .signinbutton {
-    /* padding: 0.7rem;
-
-    background: #168F8E;
-    border: 1.5px solid #168F8E;
-    border-radius: 6px;
-    text-align: center;
-    color: white !important; */
+    
     
 
 width: fit-content;
@@ -93,8 +91,13 @@ background: #168F8E;
 border: 1.5px solid #168F8E;
 border-radius: 6px;
 color: white !important;
+padding: 0.5rem;
+
 }
 .signinbutton > a{
+    color: #ffffff !important;
+}
+.signinbutton > a:hover{
     color: #ffffff !important;
 }
 .signinbutton:hover{
@@ -119,7 +122,10 @@ color: white !important;
     .banner2{
         height: 25rem;
     }
+.banner3{
+    height: 20rem;
 
+}
 .pattern {
     height: 3rem;
     margin-top: 4rem;
@@ -529,21 +535,23 @@ footer .footer-title {
 .cancelicon {
     height: 0.7rem;
 }
+.testcard{
+    border-bottom: 2px dashed #9D9EA2;
+}
 
 .appcard {
     background-color: #ffffff !important;
 }
 
 .morebutton {
-    height: 2rem;
-    width: 7rem;
+    font-size: 0.9rem;
+    padding: 0.4rem;
     background: #DCEEEE;
     border-radius: 8px;
     color: #168F8E;
     font-family: 'Nunito Sans';
 font-style: normal;
 font-weight: 600;
-font-size: 20px;
 
 }
 .appcardbody{
@@ -567,3 +575,27 @@ font-size: 20px;
     background: #DCEEEE;
 border-radius: 8px;
 }
+.navbar-light .navbar-nav .show>.nav-link{
+    color:#626262 !important;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+   color:  #168F8E !important;
+}
+
+.docbanner{
+    padding-top: 0.5rem;
+}
+.ccard:hover{
+        background-color: unset !important;
+        color: unset !important;
+        border: unset !important;
+    
+}
+@media screen and (min-width:995px) {
+    .docbanner{
+        padding-top: 17rem;
+    }
+    .navpad{
+        padding: 0 80px;
+    }
+  }
