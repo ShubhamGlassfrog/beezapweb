@@ -61,107 +61,112 @@
 
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="https://beezap.in/doctor" target="_blank">Doctor Login</a>
-              <!-- <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal">Register</a> -->
-              <!-- <div class="modal fade"   id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document" >
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Signup to Beezap</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body" >
+
+              <a type="button" class="dropdown-item" data-toggle="modal" data-target="#myModal">
+                Register
+              </a>
+            </div>
+          </div>
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Signup to Beezap</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+               
+                      
+                      <div class="modal-body">
                         <h5>Your clinic ready within few steps</h5>
-                       
-                        <form class="pt-3" action="{{route('doctorSignupSubmit')}}" onsubmit="return formValidation();" method="POST">
-              
-                         <div class="row mt-4">
-                          <div class="col-xl-6 col-6">
-                          <label>Clinic Name</label>
-                          <input type="text" name="name" class="form-control " required placeholder="Clinic Name" value="{{old('name')}}">
+
+                        <form class="pt-3" action="{{route('doctorSignupSubmit')}}" onsubmit="return formValidation();"
+                          method="POST">
+
+                          <div class="row mt-4">
+                            <div class="col-xl-6 col-6">
+                              <label>Clinic Name</label>
+                              <input type="text" name="name" class="form-control " required placeholder="Clinic Name"
+                                value="{{old('name')}}">
+                            </div>
+
+                            @csrf
+                            <div class="col-xl-6 col-6">
+                              <label>Email</label>
+                              <input type="email" id="email" class="form-control " required placeholder="Email"
+                                name="email" value="{{old('email')}}">
+                              <small id="email_error" class="text-danger"></small>
+                            </div>
                           </div>
-              
+
+
                           @csrf
-                          <div class="col-xl-6 col-6">
-                          <label>Email</label>
-                          <input type="email" id="email" class="form-control "  required placeholder="Email" name="email" value="{{old('email')}}">
-                          <small id="email_error" class="text-danger"></small>
-                          </div>
-                         </div>
-                         
-              
-                         @csrf
-              
+
                           <div class="row mt-2">
-                            
-                          <div class="col-xl-6 col-6">
-                          <label>Password</label>
-                          <input name="password" name="password" type="password" required class="form-control" id="password" placeholder="Password" value="{{old('password')}}">                        
+
+                            <div class="col-xl-6 col-6">
+                              <label>Password</label>
+                              <input name="password" name="password" type="password" required class="form-control"
+                                id="password" placeholder="Password" value="{{old('password')}}">
+                            </div>
+
+                            <div class="col-xl-6 col-6">
+                              <label>Confirm Password</label>
+                              <input name="password" name="confirm_password" type="password" required
+                                class="form-control" id="confirm_password" placeholder="Password"
+                                value="{{old('password')}}">
+                              <small id="confirm_password_error" class="text-danger"></small>
+
+                            </div>
                           </div>
-              
-                          <div class="col-xl-6 col-6">
-                          <label>Confirm Password</label>
-                          <input name="password" name="confirm_password" type="password" required class="form-control" id="confirm_password" placeholder="Password" value="{{old('password')}}">                        
-                          <small id="confirm_password_error" class="text-danger"></small>
-              
-                          </div>
-                          </div>
-              
-              
-                          <input type="hidden" value="6238588f722fb979d428743d" name="countries"/>
-                          <input type="hidden" value="62397211129ba74472c6cc67" name="states"/>
+                          <!--- end row here -->
+
+
+                          <input type="hidden" value="6238588f722fb979d428743d" name="countries" />
+                          <input type="hidden" value="62397211129ba74472c6cc67" name="states" />
                           <input type="hidden" name="cities" value="623af92db14e7ef3fced5dff" id="cities" />
-              
+
                           <div class="row mt-2">
-                          <div class="col-xl-6 col-6">
-                          <label>Phone</label>
-                          <input name="phone" name="phone" type="text" required class="form-control" id="phone" placeholder="phone"  value="{{old('phone')}}">                        
-                          <small id="phone_error" class="text-danger"></small>
+                            <div class="col-xl-6 col-6">
+                              <label>Phone</label>
+                              <input name="phone" name="phone" type="text" required class="form-control" id="phone"
+                                placeholder="phone" value="{{old('phone')}}">
+                              <small id="phone_error" class="text-danger"></small>
+                            </div>
+
+
+                            <div class="col-xl-6 col-6">
+                              <label>Pincode</label>
+                              <input class="form-control" placeholder="Pincode" required name="pincode" />
+                            </div>
                           </div>
-              
-              
-                          <div class="col-xl-6 col-6">
-                          <label>Pincode</label>
-                          <input class="form-control" placeholder="Pincode"  required name="pincode"/>
-                          </div>         
-                          </div> 
-              
-              
+                          <!--- row end here -->
+
+
                           <div class="row mt-2">
-                          <div class="col-xl-6 col-6">
-                          <label>Clinic Address</label>
-                          <textarea class="form-control"  name="clinic_address"></textarea>
+                            <div class="col-xl-6 col-6">
+                              <label>Clinic Address</label>
+                              <textarea class="form-control" name="clinic_address"></textarea>
+                            </div>
                           </div>
-                          </div>
-              
-                     </div>
-                    <div class="modal-footer justify-content-center d-flex">
-                      <button type="submit" class="btn btn-primary">Signup</button>
-                    </div>
+
+                        </div>
+                            <div class="modal-footer justify-content-center d-flex">
+                              <button type="submit" class="btn btn-primary">Signup</button>
+                               </div>
                       </form>
-              
-                  </div>
+
+                    
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
-              </div> -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
@@ -206,50 +211,50 @@
         </div>
         <div class="row pt-5">
           <div class="card-deck">
-          <div class="col-lg-4 col-md-6 pt-3">
-            <div class="card" style="padding: 1rem;border-radius: 1rem;">
-              <div class="icon1">
-                <img class="icon" src="assets/Vector.svg" />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title nunito" style="font-weight: 600;">Find Your Specialist</h5>
-                <p class="card-text nunito" style="font-weight: 400;">Before consulting, look out for the specialists
-                </p>
-                <a class="card-text explore nunito" style="font-weight: 600;" href="https://beezap.in/users"><span
-                    style="color: #168F8E;">Explore more <img class="readmore" src="assets/Arrow.png" /></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 pt-3">
-            <div class="card" style="padding: 1rem;border-radius: 1rem;">
-              <div class="icon2">
-                <img class="icon" src="assets/Group.svg" />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title nunito" style="font-weight: 600;">Schedule Appointments</h5>
-                <p class="card-text nunito" style="font-weight: 400;">Choose the time and date slot as per the
-                  availability of doctors.</p>
-                <a class="card-text explore nunito" style="font-weight: 600;" href="https://beezap.in/users"><span
-                    style="color: #168F8E;">Explore more <img class="readmore" src="assets/Arrow.png" /></span>
-                </a>
+            <div class="col-lg-4 col-md-6 pt-3">
+              <div class="card" style="padding: 1rem;border-radius: 1rem;">
+                <div class="icon1">
+                  <img class="icon" src="assets/Vector.svg" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title nunito" style="font-weight: 600;">Find Your Specialist</h5>
+                  <p class="card-text nunito" style="font-weight: 400;">Before consulting, look out for the specialists
+                  </p>
+                  <a class="card-text explore nunito" style="font-weight: 600;" href="https://beezap.in/users"><span
+                      style="color: #168F8E;">Explore more <img class="readmore" src="assets/Arrow.png" /></span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 pt-3">
-            <div class="card" style="padding: 1rem;border-radius: 1rem;">
-              <div class="icon3">
-                <img class="icon" src="assets/star.svg" />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title nunito" style="font-weight: 600;">Get Your Appointment</h5>
-                <p class="card-text nunito" style="font-weight: 400;">Just a tap and get your appointment fixed.</p>
-                <a class="card-text explore nunito" style="font-weight: 600; " href="https://beezap.in/users"><span
-                    style="color: #168F8E;">Explore more <img class="readmore" src="assets/Arrow.png" /></span>
-                </a>
+            <div class="col-lg-4 col-md-6 pt-3">
+              <div class="card" style="padding: 1rem;border-radius: 1rem;">
+                <div class="icon2">
+                  <img class="icon" src="assets/Group.svg" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title nunito" style="font-weight: 600;">Schedule Appointments</h5>
+                  <p class="card-text nunito" style="font-weight: 400;">Choose the time and date slot as per the
+                    availability of doctors.</p>
+                  <a class="card-text explore nunito" style="font-weight: 600;" href="https://beezap.in/users"><span
+                      style="color: #168F8E;">Explore more <img class="readmore" src="assets/Arrow.png" /></span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="col-lg-4 col-md-6 pt-3">
+              <div class="card" style="padding: 1rem;border-radius: 1rem;">
+                <div class="icon3">
+                  <img class="icon" src="assets/star.svg" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title nunito" style="font-weight: 600;">Get Your Appointment</h5>
+                  <p class="card-text nunito" style="font-weight: 400;">Just a tap and get your appointment fixed.</p>
+                  <a class="card-text explore nunito" style="font-weight: 600; " href="https://beezap.in/users"><span
+                      style="color: #168F8E;">Explore more <img class="readmore" src="assets/Arrow.png" /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -299,7 +304,7 @@
         </div>
         <div class="row">
           <!-- <div class="card-deck"> -->
-            <div class="col-lg-4 col-md-6 pt-3">
+          <div class="col-lg-4 col-md-6 pt-3">
 
             <div class="card" style="padding: 1rem;background-color: #ffffff !important; border-radius: 1rem;">
               <div class="icon1">
@@ -321,8 +326,8 @@
                 </div>
               </div>
             </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pt-3">
+          </div>
+          <div class="col-lg-4 col-md-6 pt-3">
 
             <div class="card" style="padding: 1rem;background-color: #ffffff !important;border-radius: 1rem;">
               <div class="icon2">
@@ -344,8 +349,8 @@
                 </div>
               </div>
             </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pt-3">
+          </div>
+          <div class="col-lg-4 col-md-6 pt-3">
 
             <div class="card" style="padding: 1rem;background-color: #ffffff !important;border-radius: 1rem;">
               <div class="icon3">
@@ -367,7 +372,7 @@
                 </div>
               </div>
             </div>
-            </div>
+          </div>
           <!-- </div> -->
         </div>
       </div>
@@ -465,7 +470,7 @@
         </div>
         <div class="row">
           <!-- <div class="card-deck"> -->
-            <div class="col-lg-4 col-md-6 pt-3">
+          <div class="col-lg-4 col-md-6 pt-3">
 
             <div class="card" style="border: none !important;">
               <div class="d-flex justify-content-center">
@@ -482,8 +487,8 @@
                       class="readmore" src="assets/Arrow.png" /></span></p>
               </div>
             </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pt-3">
+          </div>
+          <div class="col-lg-4 col-md-6 pt-3">
 
             <div class="card" style="border: none !important;">
               <div class="d-flex justify-content-center">
@@ -500,8 +505,8 @@
                       class="readmore" src="assets/Arrow.png" /></span></p>
               </div>
             </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pt-3">
+          </div>
+          <div class="col-lg-4 col-md-6 pt-3">
 
             <div class="card" style="border: none !important;">
               <div class="d-flex justify-content-center">
@@ -518,13 +523,13 @@
                       class="readmore" src="assets/Arrow.png" /></span></p>
               </div>
             </div>
-            </div>
+          </div>
           <!-- </div> -->
         </div>
       </div>
     </section>
 
-    
+
   </main>
 
   <footer id="footer">
@@ -584,6 +589,7 @@
 
 
 </body>
+
 <script src="https://kit.fontawesome.com/1442993351.js" crossorigin="anonymous"></script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

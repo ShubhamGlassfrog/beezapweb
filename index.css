@@ -597,6 +597,8 @@ border-radius: 8px;
         border: unset !important;
     
 }
+
+
 @media screen and (min-width:995px) {
     .docbanner{
         padding-top: 17rem;
@@ -605,3 +607,6 @@ border-radius: 8px;
         padding: 0 80px;
     }
   }
+
+
+  
