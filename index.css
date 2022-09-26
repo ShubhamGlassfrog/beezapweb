@@ -628,7 +628,7 @@ border-radius: 8px;
         flex-direction: row-reverse !important;
     }
   }
-  .close{
+  /* .close{
     background-image: url(assets/close.svg);
     display: inline-block;
     width: 1.5em;
@@ -636,7 +636,7 @@ border-radius: 8px;
     vertical-align: middle;
     content: "";
     background-size: 100% 100%;
-  }
+  } */
   .menu{
     background-image: url(assets/menu.svg);
     display: inline-block;
