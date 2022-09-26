@@ -615,3 +615,36 @@ border-radius: 8px;
   .appointmentcard{
     padding: 1rem; border-radius: 1rem;height: 100%;
   }
+
+  .navbar-light .navbar-toggler{
+    border: none !important;
+  }
+  button:focus{
+    outline: none !important;
+  }
+  @media screen and (max-width:991px) {
+    .resnav{
+        display: flex !important;
+        flex-direction: row-reverse !important;
+    }
+  }
+  .close{
+    background-image: url(assets/close.svg);
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background-size: 100% 100%;
+  }
+  .menu{
+    background-image: url(assets/menu.svg);
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background-size: 100% 100%;
+  }
+
+  
