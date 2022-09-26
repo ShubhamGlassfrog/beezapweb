@@ -609,4 +609,9 @@ border-radius: 8px;
   }
 
 
-  
+  .testimonialcard{
+    padding: 1rem;background-color: #ffffff !important; border-radius: 1rem;height: 100%;
+  }
+  .appointmentcard{
+    padding: 1rem; border-radius: 1rem;height: 100%;
+  }
