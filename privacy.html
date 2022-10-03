@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/Logo.svg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="page home">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-border navpad resnav ">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
+            onclick="myFunction(this)">
+            <span class="navbar-toggler-icon" id="none"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="assets/Logo.svg" style="height: 2rem;" /></a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <form class="form-inline mr-auto mt-2 mt-lg-0">
+                <div class="mt-3 inputs">
+                    <ul class="navbar-nav my-2 my-lg-0">
+                        <li class="nav-item pr-3">
+                            <a class="nav-link" href="finddoc.html">Find Doctor </a>
+                        </li>
+                    </ul>
+                    <!-- <i class="fa fa-search fa-xs" style="color: #495057;"></i> -->
+                    <!-- <a href="finddoc.html"><input type="text" class="form-control searchbar " placeholder="Find Doctors"></a> -->
+
+
+                </div>
+            </form>
+            <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item activelink pr-3">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+
+                <li class="nav-item nav-item d-flex pr-3">
+                    <div class="dropdown show">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Doctor Login
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://beezap.in/doctor" target="_blank">Doctor Login</a>
+
+                            <a type="button" class="dropdown-item" data-toggle="modal" data-target="#myModal">
+                                Register
+                            </a>
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Signup to Beezap</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+
+
+                                <div class="modal-body">
+                                    <h5>Your clinic ready within few steps</h5>
+
+                                    <form class="pt-3" action="{{route('doctorSignupSubmit')}}"
+                                        onsubmit="return formValidation();" method="POST">
+
+                                        <div class="row mt-4">
+                                            <div class="col-xl-6 col-6">
+                                                <label>Clinic Name</label>
+                                                <input type="text" name="name" class="form-control " required
+                                                    placeholder="Clinic Name" value="">
+                                            </div>
+
+                                            <div class="col-xl-6 col-6">
+                                                <label>Email</label>
+                                                <input type="email" id="email" class="form-control " required
+                                                    placeholder="Email" name="email" value="">
+                                                <small id="email_error" class="text-danger"></small>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="row mt-2">
+
+                                            <div class="col-xl-6 col-6">
+                                                <label>Password</label>
+                                                <input name="password" name="password" type="password" required
+                                                    class="form-control" id="password" placeholder="Password" value="">
+                                            </div>
+
+                                            <div class="col-xl-6 col-6">
+                                                <label>Confirm Password</label>
+                                                <input name="password" name="confirm_password" type="password" required
+                                                    class="form-control" id="confirm_password" placeholder="Password"
+                                                    value="">
+                                                <small id="confirm_password_error" class="text-danger"></small>
+
+                                            </div>
+                                        </div>
+                                        <!--- end row here -->
+
+
+                                        <input type="hidden" value="6238588f722fb979d428743d" name="countries" />
+                                        <input type="hidden" value="62397211129ba74472c6cc67" name="states" />
+                                        <input type="hidden" name="cities" value="623af92db14e7ef3fced5dff"
+                                            id="cities" />
+
+                                        <div class="row mt-2">
+                                            <div class="col-xl-6 col-6">
+                                                <label>Phone</label>
+                                                <input name="phone" name="phone" type="text" required
+                                                    class="form-control" id="phone" placeholder="phone" value="">
+                                                <small id="phone_error" class="text-danger"></small>
+                                            </div>
+
+
+                                            <div class="col-xl-6 col-6">
+                                                <label>Pincode</label>
+                                                <input class="form-control" placeholder="Pincode" required
+                                                    name="pincode" />
+                                            </div>
+                                        </div>
+                                        <!--- row end here -->
+
+
+                                        <div class="row mt-2">
+                                            <div class="col-xl-6 col-6">
+                                                <label>Clinic Address</label>
+                                                <textarea class="form-control" name="clinic_address"></textarea>
+                                            </div>
+                                        </div>
+
+                                </div>
+                                <div class="modal-footer justify-content-center d-flex">
+                                    <button type="submit" class="btn btn-primary">Signup</button>
+                                </div>
+                                </form>
+
+
+
+                                <!-- Modal footer -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item pr-3 signinbutton">
+                    <a class=" d-flex" href="https://beezap.in/users" tabindex="-1" aria-disabled="true"
+                        style="width: fit-content;">Sign in
+                        <img class="sgicon padding" src="assets/SignInLogo.svg" /></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <main>
+        <section style="background-color: #ffffff;">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="modal-body">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <div class="vw-100">
+                                    <h5 class="playfair"><strong>Privacy Policy</strong></h5>
+                                </div>
+                                <div>
+                                    <p class="pt-3 pr-2">
+                                    <ol style="list-style-type: none;">
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Privacy Statement</strong>
+                                            <p class="worksans">Privacy StatementThis Privacy Policy sets out how
+                                                Zapmedics IT Private Limited, (CIN:U72900UR2021PTC013210) ('we', 'us',
+                                                'our', 'Zapmedics' ‘Beezap’) collects, holds, uses and protects your
+                                                personal information. This Privacy Policy applies to your use of the
+                                                Beezap.in website ('the Website') and Beezap apps for android and apple
+                                                devices (‘the Apps’). You agree that using the Website or the Apps or
+                                                clicking 'I Accept' when signing up for a user account on the Website or
+                                                the App implies your consent to the collection and use of your personal
+                                                information in accordance with this Privacy Policy. This Privacy Policy
+                                                is published in compliance with, inter alia: Section 43A of the
+                                                Information Technology Act, 2000; Regulation 4 of the Information
+                                                Technology (Reasonable Security Practices and Procedures and Sensitive
+                                                Personal Information) Rules, 2011 (the “SPI Rules”); and Regulation 3(1)
+                                                of the Information Technology (Intermediaries Guidelines) Rules, 2011.
+                                            </p>
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Kinds of Personal Information Collected</strong>
+                                            <p class="worksans">In the course of conducting our business, we collect personal information
+                                                from
+                                                you including, but not limited to:</p>
+                                            <ul>
+                                                <li class="worksans">Your full name</li>
+                                                <li class="worksans">Your title</li>
+                                                <li class="worksans">Your contact details (including street address, postal address,
+                                                    email
+                                                    address and phone number)</li>
+                                                <li class="worksans">Your time zone</li>
+                                                <li class="worksans">Your gender</li>
+                                                <li class="worksans">Your date of birth</li>
+                                                <li class="worksans">Your next of kin</li>
+                                                <li class="worksans">Location information</li>
+                                                <li class="worksans">Transactional information including method of payment and your
+                                                    consultation
+                                                    dates and times</li>
+                                                <li class="worksans">Your reasons for using the Website or the App or any of our products
+                                                    and
+                                                    services</li>
+                                                <li class="worksans">Your preferences and opinions relating to the Website or any of our
+                                                    products
+                                                    and services</li>
+                                                <li class="worksans">Logs, which may include information such as your Internet Protocol
+                                                    (IP)
+                                                    address, browser type, browser version, clickstream data, the pages
+                                                    of the
+                                                    Website or the App that you visit, the features of the Website and
+                                                    the App,
+                                                    activities or actions you do while using the Website and the App,
+                                                    the time
+                                                    and date of your visit to the Website and the App, the time spent on
+                                                    any
+                                                    pages of the Website and the App, the number of consultations that
+                                                    you have,
+                                                    the duration of each consultation, the technical performance of your
+                                                    video
+                                                    calls,mic,uploaded documents and other log related information
+                                                    relating to
+                                                    your use of the Website
+                                                    and the App.</li>
+                                            </ul>
+                                            <p class="worksans">We may collect and store the clinical notes and / or clinical assessments
+                                                of
+                                                health care service providers (‘Providers’) who are registered with us,
+                                                which
+                                                relate to your consultation with the Provider. The personal information
+                                                we
+                                                collect is reasonably necessary for the purposes of conducting and
+                                                improving our
+                                                business and our products and services. Given the nature of the products
+                                                and
+                                                services we offer, some of the information we collect may be sensitive
+                                                information including health information. This information may be
+                                                collected in a
+                                                number of ways, including:</p>
+                                            <p class="worksans">Personal information collected by us may include:
+                                            </p>
+                                            <ul>
+                                                <li class="worksans">Through the Website and the App</li>
+                                                <li class="worksans">Through our services</li>
+                                                <li class="worksans">Through our account creation process on the Website and the App</li>
+                                                <li class="worksans">From our users</li>
+                                                <li class="worksans">Through marketing research including surveys</li>
+                                                <li class="worksans">Through any of our other business activities or events</li>
+                                                <li class="worksans">Through a person seeking employment with us, having been employed or
+                                                    contracted by us or being employed or contracted by us and/or</li>
+                                                <li class="worksans">By otherwise having some form of contact with a person, such as by
+                                                    personal
+                                                    contact, mail, telephone, email, video teleconferencing, Internet or
+                                                    other
+                                                    forms of telecommunication.</li>
+                                            </ul>
+                                            <p class="worksans">We endeavor to only collect personal information about you from you,
+                                                where it is
+                                                reasonable and practical to do so.</p>
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong> Use of Personal Information</strong>
+                                            <p class="worksans">Zapmedics (including its staff, contractors and volunteers) will use the
+                                                personal
+                                                information you provide in the provision of services to you.
+                                                We may use personal information you provide for evaluating, improving,
+                                                personalizing and developing our business, the Website, and the App our
+                                                other
+                                                products and services, and to protect our users. We may also use your
+                                                personal
+                                                information in the course of:
+                                            </p>
+                                            <ul>
+                                                <li class="worksans">improving the Website, and the App, our other products and services,
+                                                    and
+                                                    user satisfaction</li>
+                                                <li class="worksans">providing and delivering the Website and the App and our other
+                                                    products and
+                                                    services to you</li>
+                                                <li class="worksans">providing support to you (including technical support) with regard
+                                                    to use of
+                                                    the Website and the App and our other products and services</li>
+                                                <li class="worksans">promoting and delivering our Site and our other products to
+                                                    organizations
+                                                    and individuals</li>
+                                                <li class="worksans">our internal research and statistical purposes (including market
+                                                    segmentation and customer value analysis)</li>
+                                                <li class="worksans">enabling us to forward to you other information or material which we
+                                                    believe
+                                                    may be of interest to you, or which you have indicated you may be
+                                                    interested
+                                                    in receiving.</li>
+                                            </ul>
+                                            <p class="worksans">We automatically gather information to monitor the use of the Website and
+                                                the App
+                                                and our other products and services. Most of the data we collect is
+                                                aggregated,
+                                                and such aggregated information is effectively anonymous to us.
+                                                Sometimes you will be asked to confirm that you agree to a particular
+                                                activity,
+                                                or the collection of your personal information for a specific purpose.
+                                                Though we
+                                                usually collect aggregate data, we will make it clear to you if any
+                                                information
+                                                is being collected in a way that could personally identify you.
+                                                We may use Google Analytics, and other third party analytics software to
+                                                track
+                                                your usage of the Website and the App. Google Analytics is a web
+                                                analysis
+                                                service provided by Google. Google utilizes the data collected to track
+                                                and
+                                                examine the use of our Site, to prepare reports on its activities and
+                                                share them
+                                                with other Google services.
+                                            </p>
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Disclosure of Personal Information</strong>
+                                            <p class="worksans">In the course of conducting our business, we may also disclose your
+                                                personal
+                                                information to other entities including:</p>
+                                            <ul>
+                                                <li class="worksans">Providers</li>
+                                                <li class="worksans">external service providers, so that they can provide products and
+                                                    services
+                                                    in connection with the operation and improvement of our business
+                                                </li>
+                                                <li class="worksans">our affiliates, including but not limited to other organizations and
+                                                    businesses within our group of organizations</li>
+                                                <p class="worksans">We will not use or disclose information about individuals for other
+                                                    purposes
+                                                    without consent, except in exceptional circumstances, such as if
+                                                    disclosure
+                                                    is required by law or is necessary to protect the rights or property
+                                                    of
+                                                    Zapmedics or any other individual, or to lessen a serious threat to
+                                                    a
+                                                    person’s health or safety. This may include if we have concerns that
+                                                    there
+                                                    is a serious threat to your health or safety.
+                                                    Certain services we provide and features on the Website and the App
+                                                    are open
+                                                    to any other account holders to view, including, but not limited to,
+                                                    our
+                                                    blog (if any), and certain aspects of your personal user profile.
+                                                    Any
+                                                    information you create or post in these locations may be available
+                                                    and
+                                                    accessible to other users of the Website.
+                                                    The Website and the App may also enable you to upload, post,
+                                                    transmit,
+                                                    display, perform or distribute content, information or other data,
+                                                    which may
+                                                    include your personal information. Any information that you choose
+                                                    to
+                                                    disclose by means of such features will become public information.
+                                                    We strongly urge you to exercise caution when deciding to disclose
+                                                    your
+                                                    personal information by such means. You agree to assume all
+                                                    responsibility
+                                                    for all personal information that you have made public.
+                                                </p>
+                                            </ul>
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Storage and Security of Personal Information</strong>
+                                            <p class="worksans">We will use all reasonable endeavors to maintain the security of personal
+                                                information we collect against misuse, interference, loss, unauthorized
+                                                access,
+                                                modification or disclosure.
+                                                Data transmissions over the Internet cannot be guaranteed to be fully
+                                                and
+                                                absolutely secure. The Website and the App and our services have
+                                                security
+                                                measures in place designed to protect against the loss, misuse and
+                                                alteration of
+                                                the information under our control. The precautionary steps we take to
+                                                protect
+                                                personal information include:
+                                            </p>
+                                            <ul>
+                                                <li class="worksans">storing all our cloud information in India by way of a HIPAA and
+                                                    GDPR
+                                                    compliant server</li>
+                                                <li class="worksans">external messaging of data is not permitted</li>
+                                                <li class="worksans">adopting measures to protect our computer systems and networks for
+                                                    storing,
+                                                    processing and transmitting personal information</li>
+                                                <li class="worksans">adopting procedural and personnel measures for limiting access to
+                                                    personal
+                                                    information by our staff</li>
+                                                <li class="worksans">regularly reviewing our information collection, storage and
+                                                    processing
+                                                    practices</li>
+                                                <li class="worksans">secured encrypted servers, password protection for electronic files,
+                                                    multi
+                                                    factor authentication procedures, securing paper files in locked
+                                                    cabinets
+                                                    and physical access restrictions.</li>
+                                            </ul>
+                                            <p class="worksans">We cannot ensure or warrant that your personal information will always be
+                                                secure
+                                                during transmission or protected from unauthorized access during storage
+                                                therefore you provide your personal information to us at your own risk.
+                                                Please
+                                                contact us immediately if you become aware or have reason to believe
+                                                there has
+                                                been unauthorized use of your personal information in connection with
+                                                the
+                                                Website and the App.</p>
+
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Cookies</strong>
+                                            <p class="worksans">Cookies are files with a small amount of data, which may include an
+                                                anonymous
+                                                unique identifier. Cookies are sent to your browser from a web site and
+                                                stored
+                                                on your computer's storage drive.
+                                                Like many sites, we use "cookies" to collect information. You can
+                                                instruct your
+                                                browser to refuse all cookies, or to indicate when a cookie is being
+                                                sent.
+                                                However, if you do not accept cookies, you may not be able to use some
+                                                of the
+                                                features of the Website or our other products and services.
+                                            </p>
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Web Beacons </strong>
+                                            <p class="worksans">Web beacons (also known as clear gifs, pixel tags or web bugs) are tiny
+                                                graphics
+                                                with a unique identifier and are used to track the online movements of
+                                                users or
+                                                to access cookies.
+                                                Unlike cookies which are stored on the user’s computer storage drive,
+                                                web
+                                                beacons are embedded invisibly on web pages (or in email).
+                                                Web beacons may be used to deliver or communicate with cookies, to count
+                                                users
+                                                who have visited certain pages and to understand usage patterns.
+                                                Like many sites, we use web beacons to collect information which is done
+                                                in
+                                                accordance with this Privacy Policy.
+                                            </p>
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Links</strong>
+                                            <p class="worksans">If you use a Link to access a third-party website, you do so entirely at
+                                                your own
+                                                risk. You should always read the applicable privacy policies on the
+                                                other
+                                                website.</p>
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Accessing and updating your personal information</strong>
+                                            <p class="worksans">If you have established an account with us, you may access and amend your
+                                                personal information through the Website after you log in. It is your
+                                                responsibility to ensure that all of your personal information is
+                                                accurate and
+                                                kept up to date.
+                                                If you wish to amend personal information that we hold that you are not
+                                                able to
+                                                amend through the Website and the App, please contact us by writing to
+                                                our
+                                                Privacy Officer at admin@Zapmedics.com. We will reasonably endeavor to
+                                                respond to
+                                                your request for access within 7 business days. You are responsible for
+                                                advising
+                                                us of any changes to your personal information.
+                                                If you wish to delete your profile from the Website, and the App please
+                                                contact
+                                                us by writing to our Privacy Officer at admin@Zapmedics.com. Please be
+                                                aware
+                                                there may be residual information left behind on our servers from your
+                                                profile /
+                                                personal information which is beyond our control. If applicable, any
+                                                legal
+                                                requirement on us to maintain certain records of your personal
+                                                information shall
+                                                prevail over any of your requests.
+                                            </p>
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Applicable Laws</strong>
+                                            <p class="worksans">The Website and the App is controlled from our offices and group
+                                                companies. This
+                                                Privacy Policy will be governed and construed in accordance with the
+                                                laws of
+                                                Uttarakhand - India. You irrevocably and unconditionally submit to the
+                                                exclusive
+                                                jurisdiction of the courts of Dehradun India. If any provision of this
+                                                Privacy
+                                                Policy is found to be invalid or unenforceable by a court of law, such
+                                                invalidity or unenforceability will not affect the remainder of this
+                                                Privacy
+                                                Policy which will continue in full force and effect.</p>
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Changes to the Privacy Policy</strong>
+                                            <p class="worksans">The Privacy Policy is effective from 15.05.2020 We reserve the right to
+                                                change
+                                                this Privacy Policy from time to time without further notice to you. Any
+                                                variations made will be updated on the Website and the App. Your use of
+                                                the
+                                                Website and the App following any such change to the Privacy Policy will
+                                                confirm
+                                                your acceptance of the changes.</p>
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Contact Us</strong>
+                                            <p class="worksans">For any further information about this Policy please contact us at
+                                                admin@Zapmedics.com.</p>
+                                        </li>
+                                        <li class="worksans"> <img src="assets/Tick Mark.png" class="beeicon" />
+                                            <strong>Making a Complaint</strong>
+                                            <p class="worksans">If you have any concerns about how we manage your personal information,
+                                                you may
+                                                write to our Privacy Officer at admin@Zapmedics.com. All complaints made
+                                                will be
+                                                dealt with in confidence. We will reasonably endeavor to provide a
+                                                response
+                                                within 30 days of receipt of your complaint.</p>
+                                        </li>
+                                    </ol>
+                                    </p>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.Content-->
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <a class="navbar-brand" href="index.html"><img src="assets/Logo.svg" style="height: 2rem;" /></a>
+
+                    <p class="pt-4 nunito" style="font-weight:400 ;">beezap is on a mission to create a healthy network
+                        between
+                        patients and healthcare providers.</p>
+
+                    <div>
+                        <ul class="list-unstyled list-inline social ">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/beezapindia"
+                                    target="_blank"><img class="icon" src="assets/Facebook.svg" /></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/beezapindia" target="_blank"><img
+                                        class="icon" src="assets/twitter.svg" /></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/company/83543831/admin/"
+                                    target="_blank"><img class="icon" src="assets/linkdl.svg" /></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/beezapindia/"
+                                    target="_blank"><img class="icon" src="assets/icons8-instagram-240.svg" /></a></li>
+
+
+                        </ul>
+                    </div>
+                    <p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://beezap.in"
+                            target="_blank">beezap</a></p>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Help</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+                        <li><a href=""><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="privacy.html"><i
+                                    class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+                        <li><a href="refund.html"><i class="fa fa-angle-double-right"></i>Refund Policy</a></li>
+                        <li><a href="https://blogs.beezap.in/" target="_blank"><i
+                                    class="fa fa-angle-double-right"></i>Blog</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+<script>
+    function myFunction(x) {
+        // x.classList.toggle("close");
+        var x = document.getElementById("close");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "none";
+        }
+
+        // document.getElementById("none").style.display = "none";
+
+    }
+</script>
+
+<script src="https://kit.fontawesome.com/1442993351.js" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="custom.js"></script>
+
+</html>

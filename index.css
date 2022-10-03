@@ -541,6 +541,7 @@ footer .footer-title {
 
 .appcard {
     background-color: #ffffff !important;
+    height: 100%;
 }
 
 .morebutton {
@@ -647,4 +648,14 @@ border-radius: 8px;
     background-size: 100% 100%;
   }
 
-  
+  .morebutton:hover{
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    background: #ffffff;
+    border: 1px solid #168F8E;
+    border-radius: 8px;
+    color: #168F8E;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+  }
